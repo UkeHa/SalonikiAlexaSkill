@@ -1,6 +1,6 @@
 ﻿using CsvHelper.Configuration;
 
-namespace SalonikiAlexa
+namespace SalonikiAlexa.Models
 {
     public class Speise
     {

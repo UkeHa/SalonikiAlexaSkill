@@ -1,4 +1,4 @@
-﻿namespace SalonikiAlexa
+﻿namespace SalonikiAlexa.Resources
 {
     internal class MessageRepository
     {

@@ -1,8 +1,9 @@
 ﻿using CsvHelper;
 using CsvHelper.Configuration;
+using SalonikiAlexa.Models;
 using System.Globalization;
 
-namespace SalonikiAlexa
+namespace SalonikiAlexa.Controllers
 {
     internal class Reader
     {
