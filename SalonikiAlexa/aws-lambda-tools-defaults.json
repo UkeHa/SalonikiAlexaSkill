@@ -1,0 +1,10 @@
+{
+  "profile": "default",
+  "region": "eu-central-1",
+  "configuration": "Release",
+  "framework": "net6.0",
+  "function-runtime": "dotnet6",
+  "function-memory-size": 256,
+  "function-timeout": 30,
+  "function-handler": "SalonikiAlexa::SalonikiAlexa.Function::FunctionHandler"
+}
