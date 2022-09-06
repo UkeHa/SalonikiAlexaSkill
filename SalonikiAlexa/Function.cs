@@ -32,7 +32,6 @@ namespace SalonikiAlexa
             {
                 log.LogInformation($"Pfad {Path.Combine(Environment.CurrentDirectory, "Resources", SALONIKI_CSV_NAME)}");
                 Speisen = Reader.ReadDishesCsv<Speise, SalonikiClassMap>(Path.Combine(Environment.CurrentDirectory, "Resources", SALONIKI_CSV_NAME));
-                // MapCsvToPoco(Path.Combine(Environment.CurrentDirectory, "Resources", SALONIKI_CSV_NAME));
             }
 
             if (input.Request is LaunchRequest)
