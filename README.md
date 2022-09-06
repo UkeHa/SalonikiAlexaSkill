@@ -4,7 +4,7 @@
 
 # Saloniki Alexa Skill
 
-This skill shows off a simple menu generator with a appetizer, main course and drink for a local restaurant.
+This skill shows off a simple menu generator with an appetizer, main course and drink for a local restaurant.
 
 ## Run "Locally"
 
