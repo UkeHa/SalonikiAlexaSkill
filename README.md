@@ -35,3 +35,4 @@ Push code from terminal (inside the cloned repository folder) to lambda
 ## Authors
 
 - [@UkeHa](https://github.com/UkeHa/)
+- OpenApi DALL-E 2 created the logo
