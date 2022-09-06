@@ -1,5 +1,5 @@
 
-![Logo](https://raw.githubusercontent.com/UkeHa/SalonikiAlexaSkill/master/Resources/amphore.png)
+![Logo](https://raw.githubusercontent.com/UkeHa/SalonikiAlexaSkill/master/SalonikiAlexa/Resources/amphore.png)
 
 
 # Saloniki Alexa Skill
