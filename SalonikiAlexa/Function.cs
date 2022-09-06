@@ -45,6 +45,7 @@ namespace SalonikiAlexa
                 case "AMAZON.HelpIntent":
                     return Response.MakeSkillResponse(Messages.HelpMessage, false, Messages.HelpReprompt);
                 case "AMAZON.StopIntent":
+                case "AMAZON.FallbackIntent":
                     return ResponseBuilder.Tell(Messages.StopMessage);
                 case "Vorspeise":
                     Vorspeise = GenerateVorspeise(Vorspeise);
@@ -64,9 +65,10 @@ namespace SalonikiAlexa
         private SkillResponse TellCurrentlySelectedMenu()
         {
             var gesamtBetrag = Math.Round(Vorspeise.Preis + Hauptgericht.Preis + Getraenk.Preis, 2);
-            return ResponseBuilder.TellWithCard($"{Messages.ResultMessage} Zuerst gibt es {Vorspeise.Name} {Vorspeise.Bezeichnung}, dann {Hauptgericht.Name} {Hauptgericht.Bezeichnung}." +
-                $" Zu trinken gibt es {Getraenk.Name} {Getraenk.Bezeichnung}. Gesamtkosten {gesamtBetrag} Euro", "Essen",
-                $"Vorspeise: {Vorspeise.Name} {Vorspeise.Bezeichnung}\nHauptgericht: {Hauptgericht.Name} {Hauptgericht.Bezeichnung}\n Getränk: {Getraenk.Name} {Getraenk.Bezeichnung}\nPreis: {gesamtBetrag}");
+            var resultMessage = $"{Messages.ResultMessage} Zuerst gibt es {Vorspeise.Name} {Vorspeise.Bezeichnung}, dann {Hauptgericht.Name} {Hauptgericht.Bezeichnung}." +
+                $" Zu trinken gibt es {Getraenk.Name} {Getraenk.Bezeichnung}. Gesamtkosten {gesamtBetrag} Euro.";
+            var cardContent = $"Vorspeise: {Vorspeise.Name} {Vorspeise.Bezeichnung}\nHauptgericht: {Hauptgericht.Name} {Hauptgericht.Bezeichnung}\n Getränk: {Getraenk.Name} {Getraenk.Bezeichnung}\nPreis: {gesamtBetrag}";
+            return Response.MakeSkillResponse(resultMessage, false, Messages.HelpReprompt, "Essen im Saloniki", cardContent);
         }
 
         private void GenerateNewMenu(out Speise vorspeise, out Speise hauptgericht, out Speise getraenk)

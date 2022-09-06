@@ -16,7 +16,7 @@
 16.;Muscheln;mit Tomatencreme und Weißem Käse;6,00;Kalte und warme Vorspeisen;
 17.;Mesesplatte;mit Weißem Käse8, Dolmadakia, Auberginen, Bohnensalat, Zucchini, Kalamaris, Zaziki, Krautsalat und Oliven;9,50;Kalte und warme Vorspeisen;
 18.;Kleine Mesesplatte;;8,00;Kalte und warme Vorspeisen;
-19.;Mesesplatte;it gebratenem Weißen Käse;10,00;Kalte und warme Vorspeisen;
+19.;Mesesplatte;mit gebratenem Weißen Käse;10,00;Kalte und warme Vorspeisen;
 20.;Oliven und Peperoni;;3,50;Kalte und warme Vorspeisen;
 21.;Knoblauchbrot;;2,00;Kalte und warme Vorspeisen;
 22.;Frische Champignons;in der Pfanne gebraten, mit Knoblauchsauce;6,00;Vegetarische Gerichte;
@@ -132,7 +132,7 @@
 182.;Schollenfilet;in Bierteig paniert und gebraten;13,00;Fischgerichte;gemischter Salat, Reis oder Pommes
 183.;Forelle;gebraten, mit Cocktailsauce;13,00;Fischgerichte;gemischter Salat, Reis oder Pommes
 185.;3 Scampi mit Kalamaris;und pikanter Sauce;15,00;Fischgerichte;gemischter Salat, Reis oder Pommes
-186.;Seelachfilet;gebraten, mit pikanter Sauce;14,00;Fischgerichte;gemischter Salat, Reis oder Pommes
+186.;Seelachsfilet;gebraten, mit pikanter Sauce;14,00;Fischgerichte;gemischter Salat, Reis oder Pommes
 187.;Scampi;gebraten, mit Cocktail-Sauce;18,50;Fischgerichte;gemischter Salat, Reis oder Pommes
 188.;Scampi-Spieß;gegrillt, mit Knoblauch-Sauce;18,50;Fischgerichte;gemischter Salat, Reis oder Pommes
 189.;Kalamaris und Sardinen;mit Cocktail-Sauce;14,00;Fischgerichte;gemischter Salat, Reis oder Pommes
@@ -174,7 +174,7 @@ G8;Weißwein;;5,00;Getränke;
 G9;Apfelschorle;;3,20;Getränke;
 G10;Kiba;;3,20;Getränke;
 G11;Ouzo;;1,20;Getränke;
-G12;Flashe Ouzo;;25,00;Getränke;
+G12;Flasche Ouzo;;25,00;Getränke;
 G13;Spezi;;2,80;Getränke;
 G14;Mineralwasser;;2,00;Getränke;
 G15;Cola;;2,80;Getränke;

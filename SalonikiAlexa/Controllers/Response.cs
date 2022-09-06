@@ -13,12 +13,21 @@ namespace SalonikiAlexa.Controllers
         /// <returns></returns>
         internal static SkillResponse MakeSkillResponse(string outputSpeech,
             bool shouldEndSession,
-            string repromptText)
+            string repromptText, string title = "", string cardContent = "")
         {
+            StandardCard card = null;
+
+            card = new StandardCard()
+            {
+                Title = title,
+                Content = cardContent
+            };
+
             var response = new ResponseBody
             {
                 ShouldEndSession = shouldEndSession,
-                OutputSpeech = new PlainTextOutputSpeech { Text = outputSpeech }
+                OutputSpeech = new PlainTextOutputSpeech { Text = outputSpeech },
+                Card = card
             };
 
             if (repromptText != null)
