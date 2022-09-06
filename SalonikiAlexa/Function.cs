@@ -69,7 +69,7 @@ namespace SalonikiAlexa
             var gesamtBetrag = Math.Round(Vorspeise.Preis + Hauptgericht.Preis + Getraenk.Preis, 2);
             var resultMessage = $"{Messages.ResultMessage} Zuerst gibt es {Vorspeise.Name} {Vorspeise.Bezeichnung}, dann {Hauptgericht.Name} {Hauptgericht.Bezeichnung}." +
                 $" Zu trinken gibt es {Getraenk.Name} {Getraenk.Bezeichnung}. Gesamtkosten {gesamtBetrag} Euro.";
-            var cardContent = $"Vorspeise: {Vorspeise.Name} {Vorspeise.Bezeichnung}\nHauptgericht: {Hauptgericht.Name} {Hauptgericht.Bezeichnung}\n Getränk: {Getraenk.Name} {Getraenk.Bezeichnung}\nPreis: {gesamtBetrag}";
+            var cardContent = $"Vorspeise: {Vorspeise.Name} {Vorspeise.Bezeichnung}\nHauptgericht: {Hauptgericht.Name} {Hauptgericht.Bezeichnung}\n Getränk: {Getraenk.Name}\nPreis: {gesamtBetrag}";
             return Response.MakeSkillResponse(resultMessage, false, Messages.HelpReprompt, "Essen im Saloniki", cardContent);
         }
 
